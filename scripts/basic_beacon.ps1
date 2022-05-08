@@ -9,7 +9,7 @@ $beacon_interval = 30
 $count = 1
 
 Do {
-    if(Test-NetConnection -ComputerName $beacon_destination -Port $beacon_port) {
+    if(Test-Connection -TargetName $beacon_destination -TcpPort $beacon_port) {
         $time = Get-Date -Format T
         Write-Host "Connection Successful at $time - Count of $count"
     } else {
