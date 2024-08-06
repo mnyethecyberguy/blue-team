@@ -25,3 +25,4 @@ function Start-BasicBeacon {
 
 }
 
+Start-BasicBeacon
